@@ -1,0 +1,134 @@
+
+/* custom properties, update for different design */
+
+:root {
+    --ff-primary: 'Courier New', Courier, Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    --ff-secondary: 'Titillium Web', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 700;
+
+    --clr-light: #f9bb6f;
+    --clr-dark: #342934;
+    --clr-accent: #fffcfc;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+
+.navbar {
+    background: var(--clr-light);
+}
+.nav-link,
+.navbar-brand {
+    color: var(--clr-accent);
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+    font-family: var(--ff-primary);
+}
+.nav-link:hover {
+    color:cornflowerblue;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--clr-dark);
+}
+
+.header {
+    background-image: url(../assets/wallpaper-vhsteal.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+    font-family: var(--ff-primary);
+}
+.description h1 {
+    color: var(--clr-light);
+}
+.description p {
+    color: var(--clr-accent);
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-family: var(--ff-secondary);
+}
+.description button {
+    border: 1px solid var(--clr-dark);
+    background: var(--clr-light);
+    border-radius: 0;
+    color: var(--clr-accent);
+}
+.description button:hover {
+    border: 1px solid var(--clr-accent);
+    background: var(--clr-accent);
+    color: #000;
+}
+
+
+
+.footer {
+    background: var(--clr-dark);
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: var(--fs-h3);
+    font-family: var(--ff-secondary);
+}
+
+.footer a { color: inherit }
+
+.footer__link {
+    font-size: var(--fs-h3);
+    font-weight: bold;
+    color: var(--clr-light);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+}
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 0;
+    color: var(--clr-light);
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
+.social-list__link {
+    padding: .5em;
+}
